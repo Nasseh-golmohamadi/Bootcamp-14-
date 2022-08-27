@@ -653,4 +653,8 @@ article nav section.offline::-webkit-scrollbar-thumb {
   main.base aside{
     font-size: 14px;
   }
+
+  .leftest-nav ul li{
+    margin: 5px 0;
+  }
 }
