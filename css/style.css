@@ -474,6 +474,7 @@ main
   p {
   display: flex;
   flex-direction: row;
+  font-size: 12px;
 }
 
 main
