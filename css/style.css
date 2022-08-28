@@ -354,7 +354,7 @@ main section.chat header nav:nth-child(2) i.fa-user-group {
 main section.chat header nav:nth-child(2) i.fa-magnifying-glass {
   position: absolute;
   font-size: 12px;
-  top: 5px;
+  top: 7px;
   right: 5px;
 }
 
