@@ -369,15 +369,10 @@ main section.chat article div.right {
   width: 77%;
   height: 100%;
   color: var(--f);
-  padding: 20px;
   font-family: "Whitney";
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-}
-
-main section.chat article div.right div.top-right{
-    margin: auto 0;
 }
 
 main section.chat article div.right > div {
