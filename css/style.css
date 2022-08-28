@@ -371,7 +371,7 @@ main section.chat article div.right {
   color: var(--f);
   font-family: "Whitney";
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
