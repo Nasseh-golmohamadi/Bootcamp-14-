@@ -636,6 +636,10 @@ article nav section.offline::-webkit-scrollbar-thumb {
   main.base aside{
     width: 25%;
   }
+
+  main section.chat article div.right section div.opacity div p{
+    font-size: 12px;
+  }
 }
 
 @media (max-width:650px) {
