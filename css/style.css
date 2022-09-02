@@ -389,10 +389,13 @@ main section.chat article div.right {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 main section.chat article div.right div.top-right {
   margin: auto 0;
 }
 
+=======
+>>>>>>> e7d94825e9625ff42c3327f919fff329ba6a971b
 main section.chat article div.right > div {
   text-align: center;
   font-size: 32px;
