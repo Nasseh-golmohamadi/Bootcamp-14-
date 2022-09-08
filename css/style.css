@@ -50,6 +50,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   gap: 8px;
   padding-top: 3vh;
   align-items: center;
@@ -63,17 +64,23 @@ div.container .leftest-nav ul div.line {
 }
 
 .leftest-nav ul li {
-  width: 90%;
+  width: 100%;
   height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: var(--lightBg);
-  transition: 350ms;
 }
 
-.leftest-nav ul li:hover {
+
+.leftest-nav ul li.active a{
+  padding: 0;
+}
+
+.leftest-nav ul a{
+  transition: all 500ms ease;
+}
+
+.leftest-nav ul a:hover{
   color: var(--f);
   background-color: #3ba55d;
   border-radius: 15px;
@@ -87,7 +94,7 @@ div.container .leftest-nav ul div.line {
   color: var(--white);
 }
 
-.leftest-nav ul li:first-child:hover {
+.leftest-nav ul li:first-child a:hover {
   background-color: var(--purple);
 }
 
@@ -97,17 +104,20 @@ div.container .leftest-nav ul div.line {
 
 .leftest-nav ul li.active::before {
   content: "";
-  width: 8px;
-  height: 38px;
+  width: 4px;
+  height: 42px;
   background-color: var(--f);
   position: absolute;
   top: 0px;
-  left: -17px;
-  border-radius: 5px;
+  left: 0px;
+  border-radius: 10px;
 }
 
 .leftest-nav ul li a {
   font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--lightBg);
 }
 
 .leftest-nav ul li a img {
@@ -320,7 +330,7 @@ main section.chat header nav:first-child {
 main section.chat header nav:first-child div {
   display: flex;
   flex-direction: row;
-  gap:7px;
+  gap: 7px;
 }
 
 main section.chat header nav:first-child div.horizental {
@@ -389,13 +399,10 @@ main section.chat article div.right {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 main section.chat article div.right div.top-right {
   margin: auto 0;
 }
 
-=======
->>>>>>> e7d94825e9625ff42c3327f919fff329ba6a971b
 main section.chat article div.right > div {
   text-align: center;
   font-size: 32px;
@@ -519,7 +526,7 @@ main section.chat article div.right section div.opacity {
   margin: auto 0;
 }
 
-main section.chat article div.right section{
+main section.chat article div.right section {
   margin: 0 auto;
   width: 90%;
 }
@@ -534,7 +541,6 @@ main section.chat article div.right section div.opacity div {
   margin-bottom: 8px;
   padding: 14px;
   gap: 15px;
-
 }
 
 main section.chat article div.right section div.opacity div i {
@@ -610,14 +616,19 @@ article nav section ul li a img {
 }
 
 article nav section.offline {
-  opacity: 0.5;
   overflow-y: auto;
   height: 60%;
 }
 
-article nav section.offline ul li:hover {
+article nav section.offline ul li{
+  opacity: 0.5;
+}
+
+article nav section.offline ul li:hover{
   opacity: 1;
 }
+
+
 
 article nav section.offline::-webkit-scrollbar {
   width: 10px;
@@ -633,14 +644,14 @@ article nav section.offline::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-@media (max-width:1400px){
-  section.chat header nav:first-child div:nth-child(2){
+@media (max-width: 1400px) {
+  section.chat header nav:first-child div:nth-child(2) {
     display: none;
   }
 }
 
-@media (max-width:1200px){
-  section.chat header nav:first-child div:nth-child(2){
+@media (max-width: 1200px) {
+  section.chat header nav:first-child div:nth-child(2) {
     display: none;
   }
 }
@@ -649,27 +660,28 @@ article nav section.offline::-webkit-scrollbar-thumb {
   main.base aside div.top {
     font-size: 9px;
   }
+  
   main.base aside {
     font-size: 10px;
   }
 
-  .leftest-nav{
-    width:8%;
+  .leftest-nav {
+    width: 8%;
   }
 
-  main.base{
+  main.base {
     width: 92%;
   }
 
-  main section.chat{
+  main section.chat {
     width: 78%;
   }
 
-main.base aside{
-  width: 22%;
-}
+  main.base aside {
+    width: 22%;
+  }
 
-  main section.chat header nav:first-child div:nth-child(2){
+  main section.chat header nav:first-child div:nth-child(2) {
     display: none;
   }
 
@@ -683,7 +695,7 @@ main.base aside{
 }
 
 @media (max-width: 768px) {
-  main.base{
+  main.base {
     width: 90%;
   }
 
@@ -691,7 +703,7 @@ main.base aside{
     width: 10%;
   }
 
-  main.base aside{
+  main.base aside {
     width: 30%;
   }
 
@@ -700,18 +712,18 @@ main.base aside{
   }
 
   main section.chat article div.right > div {
-    font-size: 1.50em;
+    font-size: 1.5em;
   }
 
   main section.chat article nav.users {
     display: none;
   }
 
-  main section.chat header nav:first-child div:nth-child(2){
+  main section.chat header nav:first-child div:nth-child(2) {
     display: none;
   }
 
-  main section.chat header nav:nth-child(2) section{
+  main section.chat header nav:nth-child(2) section {
     display: none;
   }
 
@@ -719,7 +731,7 @@ main.base aside{
     width: 100%;
   }
 
-  main section.chat article div.right section{
+  main section.chat article div.right section {
     width: 90%;
   }
 
@@ -730,26 +742,25 @@ main.base aside{
   main section.chat article div.right section div.opacity div p {
     font-size: 12px;
   }
+
+  main section.chat article div.right div.top-right h1 {
+    font-size: 1.75em;
+  }
 }
 
-@media (min-width: 480px) and (max-width:600px) {
-  .leftest-nav ul li.active::before {
-    left: -22px;
+@media (min-width: 480px) and (max-width: 600px) {
+
+  main section.chat header {
+    padding: 0 32px;
+  }
 }
 
-main section.chat header {
-  padding: 0 32px;
-}
-
-}
-
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
   .leftest-nav {
-    width: 16%;
+    width: 16%;`
   }
 
-  main.base aside{
+  main.base aside {
     display: none;
   }
 
@@ -758,15 +769,15 @@ main section.chat header {
     width: 84%;
   }
 
-  main section.chat{
+  main section.chat {
     width: 100%;
   }
 
-  main section.chat header nav:nth-child(2) section{
+  main section.chat header nav:nth-child(2) section {
     display: none;
   }
 
-  main section.chat header nav:first-child div:nth-child(2){
+  main section.chat header nav:first-child div:nth-child(2) {
     display: block;
   }
 
@@ -780,10 +791,6 @@ main section.chat header {
 
   main section.chat article div.right div.top-right h1 {
     font-size: 1rem;
-  }
-
-  .leftest-nav ul li.active::before {
-    left: -14px;
   }
 
   main section.chat article div.right section div.border-top-bottom .path {
@@ -817,9 +824,3 @@ main section.chat header {
     padding: 0 26px;
   }
 }
-
-
-
-
-
-
